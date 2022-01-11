@@ -1,0 +1,30 @@
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: rgb(61, 61, 61);
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.container img {
+  text-align: center;
+}
+
+.container .info-text {
+  text-align: center;
+  color: #6e7584;
+  font-size: 1rem;
+  margin-top: 2em;
+}
