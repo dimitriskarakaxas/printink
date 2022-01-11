@@ -57,7 +57,7 @@ const AuthLoginForm = (props) => {
         </div>
 
         <div className={classes["action-forgot"]}>
-          <a href="#">Forgot Password?</a>
+          <a href="https://google.com">Forgot Password?</a>
         </div>
       </div>
 
