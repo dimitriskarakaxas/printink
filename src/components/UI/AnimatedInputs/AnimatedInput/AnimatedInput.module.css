@@ -3,6 +3,7 @@
   width: 100%;
   height: 50px;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 
 .input-container input {

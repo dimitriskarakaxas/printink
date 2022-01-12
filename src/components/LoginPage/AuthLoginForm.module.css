@@ -1,7 +1,7 @@
 .form {
   width: 95%;
   margin: 8em auto 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   color: #6e7584;
 }
 
