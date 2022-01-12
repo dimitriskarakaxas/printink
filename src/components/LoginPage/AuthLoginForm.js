@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import AnimatedInput from "../UI/AnimatedInputs/AnimatedInput/AnimatedInput";
 import { FaCheck } from "react-icons/fa";
 
 import classes from "./AuthLoginForm.module.css";
@@ -17,31 +18,15 @@ const AuthLoginForm = (props) => {
   }
 
   return (
-    <form className={classes.form}>
-      <div className={classes["input-container"]}>
-        <input
-          type="text"
-          name="email"
-          id="email"
-          required
-          autoComplete="off"
-        />
-        <label htmlFor="email">
-          <span className={classes["content-name"]}>Email</span>
-        </label>
-      </div>
-      <div className={classes["input-container"]}>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          required
-          autoComplete="off"
-        />
-        <label htmlFor="password">
-          <span className={classes["content-name"]}>Password</span>
-        </label>
-      </div>
+    <form className={classes.form} autoComplete="off">
+      <AnimatedInput
+        label="Email"
+        input={{ type: "text", name: "email", id: "email" }}
+      />
+      <AnimatedInput
+        label="Password"
+        input={{ type: "password", name: "password", id: "password" }}
+      />
       <div className={classes.actions}>
         <div className={classes["action-remember"]}>
           <div className={classes["checkbox-wrapper"]}>
