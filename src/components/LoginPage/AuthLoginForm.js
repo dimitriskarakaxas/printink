@@ -1,22 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 import AnimatedInput from "../UI/AnimatedInputs/AnimatedInput/AnimatedInput";
-import { FaCheck } from "react-icons/fa";
+import AnimatedCheckbox from "../UI/AnimatedInputs/AnimatedCheckbox/AnimatedCheckbox";
 
 import classes from "./AuthLoginForm.module.css";
 
 const AuthLoginForm = (props) => {
-  const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
-
-  const checkboxClickHandler = () => {
-    setIsCheckboxChecked((prevState) => !prevState);
-  };
-
-  const iconStyles = { fontSize: "14px", color: "#fff" };
-  if (!isCheckboxChecked) {
-    iconStyles.transition = "none";
-  }
-
   return (
     <form className={classes.form} autoComplete="off">
       <AnimatedInput
@@ -28,19 +17,10 @@ const AuthLoginForm = (props) => {
         input={{ type: "password", name: "password", id: "password" }}
       />
       <div className={classes.actions}>
-        <div className={classes["action-remember"]}>
-          <div className={classes["checkbox-wrapper"]}>
-            <input
-              type="checkbox"
-              id="remember-user"
-              name="rememeber-user"
-              onClick={checkboxClickHandler}
-            />
-            <FaCheck className={classes.icon} style={iconStyles} />
-          </div>
-          <label htmlFor="remember-user">Remember Me</label>
-        </div>
-
+        <AnimatedCheckbox
+          label="Remember me"
+          input={{ id: "remember-me", name: "remember-me" }}
+        />
         <div className={classes["action-forgot"]}>
           <a href="https://google.com">Forgot Password?</a>
         </div>

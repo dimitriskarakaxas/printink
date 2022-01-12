@@ -75,5 +75,5 @@
 
 .input-container input:focus + label::before,
 .input-container input:valid + label::before {
-  transform: translateX(55%);
+  transform: translateX(45%);
 }
