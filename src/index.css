@@ -28,4 +28,11 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+@media (max-width: 27rem) {
+  :root {
+    font-size: 0.9rem;
+  }
 }
