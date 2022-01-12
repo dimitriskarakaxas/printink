@@ -36,4 +36,8 @@
   .container {
     padding: 2em 1em;
   }
+
+  .container img {
+    max-width: 220px;
+  }
 }
