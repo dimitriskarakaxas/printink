@@ -1,9 +1,10 @@
 .action-remember {
   display: flex;
+  align-items: center;
 }
 
 .action-remember label {
-  margin-left: 0.5em;
+  margin-left: 0.4em;
 }
 
 .checkbox-wrapper {
